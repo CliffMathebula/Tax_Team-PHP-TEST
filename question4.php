@@ -18,25 +18,27 @@
  * -------------------------------------------------------------------------------------------------------------------------------------------------
  */
 
-$id = "8910295209871";
 
 // your code goes here
-echo "Unsorted array is: ";
-print_r($id);
-echo "<br />";
+<?php
+
+$id = "8910295209871";
+
+echo "Unsorted ID: " . $id . "<br />";
 $len = strlen($id);
 
+// Manual Selection Sort Logic
 for ($j = 0; $j < $len - 1; $j++) {
     for ($i = $j + 1; $i < $len; $i++) {
+        // Change < to > for Descending order (Biggest to Smallest)
         if ($id[$i] > $id[$j]) {
+            // The Swap
             $temp = $id[$i];
             $id[$i] = $id[$j];
             $id[$j] = $temp;
         }
     }
 }
-echo "Sorted Array is: ";
-$sortedid = preg_replace("/(.)\\1+/", "$1", $id);
-//print_r($id);
-echo $sortedid = str_pad($sortedid, 13, "0", STR_PAD_RIGHT);
-echo "<br />";
+
+$sortedid = $id; 
+echo "Sorted ID: " . $sortedid;
