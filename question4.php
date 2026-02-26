@@ -20,7 +20,7 @@
 
 
 // your code goes here
-<?php
+
 
 $id = "8910295209871";
 
@@ -42,3 +42,4 @@ for ($j = 0; $j < $len - 1; $j++) {
 
 $sortedid = $id; 
 echo "Sorted ID: " . $sortedid;
+
